@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;300;400;500&family=Lato:wght@300;400;700&family=Rubik:wght@300;400;600;700&family=Teko:wght@400;500;600&display=swap');
+x@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;300;400;500&family=Lato:wght@300;400;700&family=Rubik:wght@300;400;600;700&family=Teko:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;300;400;500&family=Lato:wght@300;400;700&family=Roboto:wght@100;300;400&family=Rubik:wght@300;400;600;700&family=Teko:wght@400;500;600&display=swap');
 
 /* Root */
@@ -158,13 +158,12 @@ p {
 }
 
 .navbar-menu {
-    display: none;
     position: fixed;
     max-width: 700px;
     height: 80%;
     padding: 2rem;
     background-color: rgb(17 24 39);
-    transition: 0.5s;
+    transition: 0.10s;
 }
 
 .navbar-list {
@@ -199,4 +198,24 @@ p {
 
 /* End Navbar Styles */
 
+/* Media Queries */
+@media(max-width: 768px) {
+    .navbar-menu {
+        max-width: 200px;
+        height: 50%;
+        transition: 0.5s;
+    }
 
+    .nav-link:hover {
+        border-bottom: 2px solid var(--secondary-color);
+    }
+
+    .close-menu i:hover {
+        transition: 0.70s;
+        transform: rotate(180deg);
+    }
+
+}
+
+
+/* End Queires */
