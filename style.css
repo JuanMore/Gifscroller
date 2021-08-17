@@ -1,10 +1,10 @@
-x@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;300;400;500&family=Lato:wght@300;400;700&family=Rubik:wght@300;400;600;700&family=Teko:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;300;400;500&family=Lato:wght@300;400;700&family=Rubik:wght@300;400;600;700&family=Teko:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;300;400;500&family=Lato:wght@300;400;700&family=Roboto:wght@100;300;400&family=Rubik:wght@300;400;600;700&family=Teko:wght@400;500;600&display=swap');
 
 /* Root */
 :root {
 
-    --primary-color: #38393b;
+    --primary-color: #2e3a55;
     --secondary-color: #e30b5c;
 
 
@@ -29,6 +29,10 @@ h1 {
 p {
     font-family: var(--body-font);
     font-size: var(--med-font);
+}
+
+body {
+    scroll-behavior: smooth;
 }
 
 /* Utilities */
@@ -69,11 +73,66 @@ p {
     color: var(--secondary-color);
 }
 
-.c-grid {
+.grid-1{
     display: flex;
     box-sizing: initial;
     justify-content: center;
     align-items: center;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 1rem 2rem;
+}
+
+.card-1 {
+    color: var(--secondary-color);
+    width: 250px;
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(190, 127, 127, 0.2);
+    padding: 0;
+}
+
+.media {
+
+    object-fit: cover;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.card-2 {
+    color: var(--secondary-color);
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0,0,0, 0.2);
+    padding: 0;
+    margin: 10px;
+}
+
+.card-3 {
+    color: var(--secondary-color);
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0,0,0, 0.2);
+    padding: 0;
+    margin: 10px;
 }
 /* End Utilities */
 
@@ -162,7 +221,7 @@ p {
     max-width: 700px;
     height: 80%;
     padding: 2rem;
-    background-color: rgb(17 24 39);
+    background-color: #3f475a;
     transition: 0.10s;
 }
 
