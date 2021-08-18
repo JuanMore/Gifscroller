@@ -265,6 +265,24 @@ body {
         transition: 0.5s;
     }
 
+    .navbar-menu .logo {
+        font-size: 32px;
+    }
+
+    .container {
+        max-width: 768px;
+    }
+
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .card-1, .card-2, .card-3 {
+        width: auto;
+    }
+
     .nav-link:hover {
         border-bottom: 2px solid var(--secondary-color);
     }
@@ -274,6 +292,17 @@ body {
         transform: rotate(180deg);
     }
 
+}
+
+@media(min-width: 868px) {
+    .grid-2 {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+    }
+    .card-1, .card-2, .card-3 {
+        width: auto;
+    }
 }
 
 
