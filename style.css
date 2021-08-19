@@ -253,8 +253,8 @@ body {
 .login-btn {
     background-color: #fff;
     padding: 5px;
-    width: 100px;
-    border-radius: 3%;
+    width: 150%;
+    border-radius: 2%;
     border: none;
     cursor: pointer;
     margin-top: 2rem;
