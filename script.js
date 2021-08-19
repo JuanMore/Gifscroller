@@ -2,18 +2,26 @@ const menu = document.getElementById('navbar-menu')
 const toggleMenu = document.getElementById('toggle-menu')
 const closeButton = document.getElementById('close')
 
+const modal = document.querySelector('.modal')
+const openModal = document.querySelector('.login-btn')
+const closeModal = document.querySelector('.close-modal')
+
 toggleMenu.addEventListener('click', openMenu)
 closeButton.addEventListener('click', closeMenu)
+
+openModal.addEventListener('click', openLogIn)
+closeModal.addEventListener('click', closeLogIn)
 
 window.addEventListener('click', outsideClick)
 window.addEventListener('load',  () => {
     closeMenu()
     getData()
+    closeLogin()
     
 })
 
 function outsideClick(e) {
-    if(e.target === menu & e.target === document.body){
+    if(e.target === menu && e.target === modal){
         closeMenu()
     }
 }
@@ -24,6 +32,14 @@ function openMenu(){
 
 function closeMenu() {
     menu.style.display = 'none'
+}
+
+function openLogIn(){
+    modal.style.display = 'block'
+}
+
+function closeLogIn(){
+    modal.style.display = 'none'
 }
 
 const loadGif = document.getElementById('gif-load')
