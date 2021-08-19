@@ -72,6 +72,10 @@ body {
 #inline-color {
     color: var(--secondary-color);
 }
+/* End Utilities */
+
+
+/* Layout */
 
 .grid-1{
     display: flex;
@@ -96,6 +100,10 @@ body {
     overflow: auto;
     padding: 1rem 2rem;
 }
+
+/* End layout */
+
+/* Cards */
 
 .card-1 {
     color: var(--secondary-color);
@@ -134,7 +142,6 @@ body {
     padding: 0;
     margin: 10px;
 }
-/* End Utilities */
 
 /* logos */
 .menu-logo {
@@ -403,6 +410,11 @@ body {
 
     .nav-link:hover {
         border-bottom: 2px solid var(--secondary-color);
+    }
+    
+    .filter-buttons .filter-btn:hover {
+        background-color: var(--secondary-color);
+        color: #fff;
     }
 
     .close-menu i:hover {
