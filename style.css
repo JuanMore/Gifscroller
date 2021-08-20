@@ -399,6 +399,10 @@ body {
     .login-btn {
         background-color: #fff;
     }
+    
+    .btn-secondary {
+        background-color: #fff;
+    }
 
     .container {
         max-width: 768px;
