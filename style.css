@@ -426,6 +426,11 @@ body {
         background-color: #fff;
     }
     
+    .filter-buttons .btn-primary {
+        background-color: var(--secondary-color);
+
+    }
+    
     .filter-buttons .filter-btn:hover {
         background-color: var(--secondary-color);
         color: #fff;
