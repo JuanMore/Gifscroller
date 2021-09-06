@@ -4,7 +4,7 @@
 /* Root */
 :root {
 
-    --primary-color: #2e3a55;
+    --primary-color: #2c364e;
     --secondary-color: #e30b5c;
 
 
@@ -29,6 +29,11 @@ h1 {
 p {
     font-family: var(--body-font);
     font-size: var(--med-font);
+}
+
+ul, li {
+    list-style-type: none;
+
 }
 
 body {
@@ -150,7 +155,7 @@ body {
 }
 
 .logo {
-    margin:  2rem 2rem;
+    margin-right: 1.5rem;
     font-size: 4rem;
     font-weight: 700;
 }
@@ -180,30 +185,20 @@ body {
 
 
 /*  Social Bar & Icons */
-.social-bar li {
-    list-style-type: none;
-}
-
 .social-bar .social-icon{
     font-size: var(--med-font);
     color: white;
     flex-direction: row;
     margin: 10px;
 }
+
+.social-bar i:hover{
+    color: var(--secondary-color);
+}
 /* End Social Bar & Icons */
 
+
 /* Navbar Styles */
-
-/* Show Menu */
-.show {
-    left: 0;
-}
-/* End Show */
-
-.navbar-menu h3 {
-    font-size: var(--large-font);
-}
-
 .toggle-nav {
     color: #fff;
     font-size: 3rem;
@@ -211,49 +206,54 @@ body {
     width: 30px;
 }
 
-.close-menu {
-    color: #fff;
-    font-size: 3rem;
-    cursor: pointer;
-    top: -20px;
-    left: -20px;
-    position: relative;
-    transition: 0.5s;
-}
-
-.close-menu i:hover {
-    transition: 0.70s;
-    transform: rotate(180deg);
-}
-
 .navbar-menu {
-    position: fixed;
-    max-width: 700px;
-    height: 80%;
-    padding: 2rem;
-    background-color: #3f475a;
-    transition: 0.10s;
-    animation: loginOpen 1s;
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    padding: 1.5rem;
+    background-color: #334468;
+    transform: translateX(-500px);
+    transition: transform 0.6s ease-in;
 }
 
 .navbar-list {
-    display: flex;
+    display: block;
     flex-direction: column;
     padding-top: 0;
 }
 
 .navbar-list li {
     margin-right: 80%;
-    list-style-type: none;
-    margin: .5rem;
-    margin-right: 90%;
-
+    margin-bottom: 2rem;
 }
+
+.navbar-menu.show{
+    transform: translateX(-20px);
+}
+
+.menu-social {
+    display:flex;
+    justify-content: space-between;
+    width: 10%;
+}
+
+.menu-social i {
+    font-size: var(--med-font);
+    color: white;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.menu-social i:hover{
+    color: var(--secondary-color);
+}
+
 
 .login-btn {
     background-color: #fff;
-    padding: 5px;
-    width: 150px;
+    padding: 10px;
+    width: 200px;
     border-radius: 2%;
     border: none;
     cursor: pointer;
@@ -276,10 +276,6 @@ body {
 .nav-link:hover {
     border-bottom: 2px solid var(--secondary-color);
 }
-
-/* .toggle-nav {
-    display: none;
-} */
 
 /* End Navbar Styles */
 
@@ -395,11 +391,11 @@ body {
     .navbar-menu .logo {
         font-size: 32px;
     }
-    
+
     .login-btn {
         background-color: #fff;
     }
-    
+
     .btn-secondary {
         background-color: #fff;
     }
@@ -421,16 +417,16 @@ body {
     .nav-link:hover {
         border-bottom: 2px solid var(--secondary-color);
     }
-    
+
     .filter-buttons .filter-btn {
         background-color: #fff;
     }
-    
+
     .filter-buttons .btn-primary {
         background-color: var(--secondary-color);
 
     }
-    
+
     .filter-buttons .filter-btn:hover {
         background-color: var(--secondary-color);
         color: #fff;
