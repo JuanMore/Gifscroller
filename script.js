@@ -1,23 +1,17 @@
-const menu = document.getElementById('navbar-menu')
-const toggleMenu = document.getElementById('toggle-menu')
-const closeButton = document.getElementById('close')
 
 const modal = document.querySelector('.modal')
 const openModal = document.querySelector('.login-btn')
 const closeModal = document.querySelector('.close-modal')
+const showMenu = document.querySelector('.toggle-nav', displayMenu).addEventListener('click', displayMenu)
 
-toggleMenu.addEventListener('click', openMenu)
-closeButton.addEventListener('click', closeMenu)
 
 openModal.addEventListener('click', openLogIn)
 closeModal.addEventListener('click', closeLogIn)
 
 window.addEventListener('click', outsideClick)
-window.addEventListener('load',  () => {
-    closeMenu()
+window.addEventListener('load', () => {
     getData()
-    closeLogin()
-    
+    closeLogin()  
 })
 
 function outsideClick(e) {
@@ -26,12 +20,8 @@ function outsideClick(e) {
     }
 }
 
-function openMenu(){
-    menu.style.display = 'block'
-}
-
-function closeMenu() {
-    menu.style.display = 'none'
+function displayMenu(){
+    document.querySelector('.navbar-menu').classList.toggle('show')
 }
 
 function openLogIn(){
@@ -42,31 +32,33 @@ function closeLogIn(){
     modal.style.display = 'none'
 }
 
-const loadGif = document.getElementById('gif-load')
-const gifItem = [];
-// getData()
+// const loadGif = document.getElementById('gif-load')
+// const gifItem = [];
+// // getData()
 
-async function getData(){
-    try {
-    const res = await fetch('https://api.thecatapi.com/images//search?mime_types=gif', { params: { limit:1, size:"full" , mime_types: this.image_type } } , {
-        method: 'GET',
-        headers: {
-            'X-API-KEY': '96653eb4-01f5-4a20-bb73-bf422ce50d1e'
-        },
-        body: JSON.stringify(getData)
-    })
-    .then(res => console.log(res))
-    // result.forEach(res => {
-    //     const gif = document.createElement('img')
-    //     gifItem.push(gif)
+// async function getData(){
+//     try {
+//     const res = await fetch('https://api.thecatapi.com/images//search?mime_types=gif', { params: { limit:1, size:"full" , mime_types: this.image_type } } , {
+//         method: 'GET',
+//         headers: {
+//             'X-API-KEY': '96653eb4-01f5-4a20-bb73-bf422ce50d1e'
+//         },
+//         body: JSON.stringify(getData)
+//     })
+//     .then(res => console.log(res))
+//     // result.forEach(res => {
+//     //     const gif = document.createElement('img')
+//     //     gifItem.push(gif)
 
-    //     gif.innerHTML = ` 
-    //     `
-    //     console.log(res)
+//     //     gif.innerHTML = ` 
+//     //     `
+//     //     console.log(res)
 
-    // });
-} 
-catch(err){
-    console.log(err)
-}
-}
+//     // });
+// } 
+// catch(err){
+//     console.log(err)
+// }
+// }
+
+
