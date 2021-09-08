@@ -383,8 +383,8 @@ body {
 /* Media Queries */
 @media(max-width: 768px) {
     .navbar-menu {
-        max-width: 200px;
-        height: 50%;
+        max-width: 260px;
+        height: 80%;
         transition: 0.5s;
     }
 
