@@ -26,7 +26,7 @@ function displayMenu(){
 }
 
 function closeMenu(){
-    document.querySelector('.navbar-menu').classList.toggle.remove('show')
+    document.querySelector('.navbar-menu').classList.remove('show')
     
 
 }
