@@ -4,7 +4,7 @@
 /* Root */
 :root {
 
-    --primary-color: #2c364e;
+    --primary-color: #151a1f;
     --secondary-color: #e30b5c;
 
 
@@ -155,9 +155,13 @@ body {
 }
 
 .logo {
-    margin-right: 1.5rem;
-    font-size: 4rem;
+    margin-right: 1rem;
+    font-size: 3rem;
     font-weight: 700;
+}
+
+.navbar-menu .logo {
+    margin-left: -90px;
 }
 /* End logos */
 
@@ -212,7 +216,7 @@ body {
     width: 400px;
     height: 100%;
     padding: 1.5rem;
-    background-color: #334468;
+    background-color: rgb(36, 43, 58);
     transform: translateX(-500px);
     transition: transform 0.6s ease-in;
 }
@@ -236,6 +240,7 @@ body {
     display:flex;
     justify-content: space-between;
     width: 10%;
+    
 }
 
 .menu-social i {
@@ -277,6 +282,15 @@ body {
     border-bottom: 2px solid var(--secondary-color);
 }
 
+.navbar-menu .bx-x {
+    font-size: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+
+
 /* End Navbar Styles */
 
 /* Modal */
@@ -295,7 +309,7 @@ body {
 .login-box {
     margin: 10% auto;
     width: 400px;
-    background: #334468;
+    background: ;
     color: #fff;
     position: relative;
 }
@@ -383,13 +397,25 @@ body {
 /* Media Queries */
 @media(max-width: 768px) {
     .navbar-menu {
-        max-width: 260px;
+        max-width: 300px;
         height: 80%;
         transition: 0.5s;
     }
 
     .navbar-menu .logo {
         font-size: 32px;
+    }
+
+    .bx {
+        font-size: 28px;
+    }
+
+    .navbar-menu .bx-x {
+        font-size: 28px;
+    }
+
+    .navbar-menu .logo {
+        margin-left: -60px;
     }
 
     .login-btn {
