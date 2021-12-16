@@ -309,7 +309,7 @@ body {
 .login-box {
     margin: 10% auto;
     width: 400px;
-    background: ;
+    background-color: rgb(36, 43, 58);
     color: #fff;
     position: relative;
 }
