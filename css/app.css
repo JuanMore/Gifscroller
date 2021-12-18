@@ -1,0 +1,75 @@
+/* Colcade Styles */
+.grid {
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 0.5rem 0.5rem 0 0.5rem; }
+
+/* 2 columns by default, hide columns 2 & 3 */
+.grid-col:nth-child(3), .grid-col:nth-child(4) {
+  display: none; }
+
+@media (max-width: 700px) {
+  .grid {
+    margin: 0; } }
+
+/* 3 columns at medium size */
+@media (min-width: 768px) {
+  .grid-col:nth-child(3) {
+    display: block; }
+  /* show column 2 */ }
+
+/* 4 columns at large size */
+@media (min-width: 1080px) {
+  .grid-col:nth-child(3) {
+    display: block; }
+  /* show column 3 */ }
+
+.grid-item {
+  background: var(--primary-color);
+  color: white;
+  margin: 0.1rem 0.1rem .2rem 0.1rem; }
+
+.grid-item1 {
+  height: 145%px;
+  line-height: 145%px; }
+
+.grid-item2 {
+  height: 174%px;
+  line-height: 174%px; }
+
+.grid-item3 {
+  height: 181%px;
+  line-height: 181%px; }
+
+.grid-item4 {
+  height: 108%px;
+  line-height: 108%px; }
+
+.grid-item5 {
+  height: 133%px;
+  line-height: 133%px; }
+
+.grid-item6 {
+  height: 193%px;
+  line-height: 193%px; }
+
+.grid-item7 {
+  height: 105%px;
+  line-height: 105%px; }
+
+.grid-item8 {
+  height: 139%px;
+  line-height: 139%px; }
+
+.grid-item9 {
+  height: 129%px;
+  line-height: 129%px; }
+
+.grid-item10 {
+  height: 129%px;
+  line-height: 129%px; }
+
+.grid-item11 {
+  height: 187%px;
+  line-height: 187%px; }

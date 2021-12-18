@@ -1,4 +1,3 @@
-
 const modal = document.querySelector('.modal')
 const openModal = document.querySelector('.login-btn')
 const closeModal = document.querySelector('.close-modal')
@@ -8,6 +7,12 @@ const closeBtn = document.querySelector('.bx-x')
 closeBtn.addEventListener('click', closeMenu)
 openModal.addEventListener('click', openLogIn)
 closeModal.addEventListener('click', closeLogIn)
+
+// Colcade 
+const colc = new Colcade( '.grid', {
+    columns: '.grid-col',
+    items: '.grid-item'
+  });
 
 window.addEventListener('click', outsideClick)
 window.addEventListener('load', () => {
@@ -38,7 +43,5 @@ function openLogIn(){
 function closeLogIn(){
     modal.style.display = 'none'
 }
-
-
 
 

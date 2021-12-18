@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gifller | Your place for the funniest gifs on the internet</title>
     <!-- Custom CSS  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/app.css">
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
@@ -23,7 +26,7 @@
                 <li class="nav-item"><a href="index.html" class="nav-link">Home(Catz)</a></li>
                 <li class="nav-item"><a href="people.html" class="nav-link">People</a></li>
                 <li class="nav-item"><a href="things.html" class="nav-link">Random</a></li>
-                <li><button class="login-btn">Log In</button></li>
+                <!-- <li><button class="login-btn">Log In</button></li> -->
                 <div class="menu-social mt-2">
                     <li><a href="https://www.linkedin.com/in/juan-moreno-29b913123/" target="_blank" class="social-icon"><i class="bx bxl-linkedin"></i></a></li>
                     <li><a href="https://www.facebook.com/" target="_blank"  class="social-icon"><i class="bx bxl-facebook"></i></a></li>
@@ -35,7 +38,7 @@
     </header>
     <!-- End Header -->
 
-    <!-- Hero -->
+    <!-- Heading Main  -->
     <section class="container">
         <!-- Grid Items -->
         <div class="logo grid-1">Gif <span id="inline-color">Scroller</span></div>
@@ -43,6 +46,7 @@
             <a href="index.html"><button class="filter-btn c-btn btn-primary">Catz</button></a>
             <a href="people.html"><button class="filter-btn">People</button></a>
             <a href="things.html"><button class="filter-btn">Random</button></a>
+            <button class="filter-btn login-btn btn-primary"><i class="fas fa-chevron-right"></i> Log In</button>
         </div>
         <div class="social-bar grid-1 mt-2">
             <li><a href="https://www.linkedin.com/" class="social-icon"><i class="bx bxl-linkedin"></i></a></li>
@@ -51,10 +55,10 @@
             <li><a href="https://www.github.com/" class="social-icon"><i class="bx bxl-github"></i></a></li>
         </div>
     </section>
-    <!-- End Hero -->
+    <!-- End Heading -->
 
-    <!-- Content Sections -->
-    <section class="container-main mt-4">
+    <!-- Content Section -->
+    <!-- <section class="container-main mt-4">
         <div class="container grid-2">
             <div class="card-2">
                 <img class="media" src="/vids/cats/crazy-cat-dancing-crazy-cat.gif" type="gif/gif"></img>
@@ -79,7 +83,7 @@
         </div>
         <div class="container grid-2">
             <div class="card-2">
-                <img class="media" src="/vids/cats/dance-dancing.gif" type="gif/gif"></img>
+                <img class="media" src="/vids/cats/dance-dancing.gif" type="gif/gif"></img> fasdf
         </div>
             <div class="card-3">
                 <img class="media" src="/vids/cats/gtfoh-move-it.gif" type="gif/gif"></img>
@@ -110,7 +114,48 @@
                 <img class="media" src="/vids/cats/grumpy-cat.gif" type="gif/gif"></img>
         </div>
         </div>
-    </section>
+    </section> -->
+
+    <div class="grid">
+        <div class="grid-col"></div>
+        <div class="grid-col"></div>
+        <div class="grid-col"></div>
+        <div class="grid-col"></div>
+
+        <div class="grid-item grid-item1">
+            <img class="media" src="/vids/cats/crazy-cat-dancing-crazy-cat.gif" type="gif/gif"></img>
+        </div>
+        <div class="grid-item grid-item2">
+            <img class="media" src="/vids/cats/gatto-cibo.gif" type="gif/gif"></img>
+        </div>
+        <div class="grid-item grid-item3">
+            <img class="media" src="/vids/cats/fat-cat-kucing-gendut.gif" type="gif/gif"></img>
+        </div>
+        <div class="grid-item grid-item4">
+            <img class="media" src="/vids/cats/cat-pet.gif" type="gif/gif"></img>
+        </div>
+        <div class="grid-item grid-item5">
+            <img class="media" src="/vids/cats/grumpy-cat.gif" type="gif/gif"></img>
+        </div>
+        <div class="grid-item grid-item6">
+            <img class="media" src="/vids/cats/cat-kitty.gif" type="gif/gif"></img>
+        </div>
+        <div class="grid-item grid-item7">
+            <img class="media" src="/vids/cats/dance-dancing.gif" type="gif/gif"></img>
+        </div>
+        <div class="grid-item grid-item8">
+            <img class="media" src="/vids/cats/gtfoh-move-it.gif" type="gif/gif"></img>
+        </div>
+        <div class="grid-item grid-item9">
+            <img class="media" src="/vids/cats/cat-pet.gif" type="gif/gif"></img>
+        </div>
+        <div class="grid-item grid-item10">
+            <img class="media" src="/vids/cats/crazy-cat-dancing-crazy-cat.gif" type="gif/gif"></img>
+        </div>
+        <div class="grid-item grid-item11">
+            <img class="media" src="/vids/cats/cat-cats.gif" type="gif/gif"></img>
+        </div>
+      </div>
 
     <li>
         <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">
@@ -125,12 +170,12 @@
                 <h3>Log In</h3>
                 <form action="">
                     <div class="form-control">
-                        <label for="email">Email</label>
-                        <input type="email" id="email">
+                        <label for="email">Email/Username</label>
+                        <input type="email" id="email" placeholder="email/username">
                     </div>
                     <div class="form-control">
                         <label for="passowrd">Password</label>
-                        <input type="password" id="password">
+                        <input type="password" id="password" placeholder="password">
                     </div>
                     <p><a href="#">Forgot your email or password?</a></p>
                     <button class="btn-secondary">Log In</button>
@@ -144,8 +189,7 @@
           </div>
           </div>
     </div>
-
-    <script src="script.js"></script>
     <script src="https://npmcdn.com/colcade@0/colcade.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

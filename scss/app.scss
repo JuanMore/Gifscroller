@@ -1,0 +1,46 @@
+/* Colcade Styles */
+.grid {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+}
+   
+  /* 2 columns by default, hide columns 2 & 3 */
+.grid-col:nth-child(3), .grid-col:nth-child(4) { 
+  display: none; 
+}
+
+@media (max-width: 700px ) {
+  .grid { 
+    margin: 0;
+   } 
+}
+
+/* 3 columns at medium size */
+@media ( min-width: 768px ) {
+  .grid-col:nth-child(3) { 
+    display: block;
+   } /* show column 2 */
+}
+
+/* 4 columns at large size */
+@media ( min-width: 1080px ) {
+  .grid-col:nth-child(3) { 
+    display: block; 
+  } /* show column 3 */
+}
+
+.grid-item {
+  background: var(--primary-color);
+  color: white;
+  margin: 0.1rem 0.1rem .2rem 0.1rem;
+}
+
+@for $i from 1 through 11 {
+  .grid-item#{$i} {
+    $h: (random(100%) + 100%) + px;
+    height: $h;
+    line-height: $h;
+  }
+}

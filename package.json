@@ -1,0 +1,26 @@
+{
+  "name": "gifscroller",
+  "version": "1.0.0",
+  "description": "Gif scrolling application",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css",
+    "start": "node script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanMore/Gifscroller.git"
+  },
+  "author": "Juan Moreno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JuanMore/Gifscroller/issues"
+  },
+  "homepage": "https://github.com/JuanMore/Gifscroller#readme",
+  "dependencies": {
+    "colcade": "^0.2.0",
+    "node-sass": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

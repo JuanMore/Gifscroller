@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;300;400;500&family=Lato:wght@300;400;700&family=Rubik:wght@300;400;600;700&family=Teko:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;300;400;500&family=Lato:wght@300;400;700&family=Roboto:wght@100;300;400&family=Rubik:wght@300;400;600;700&family=Teko:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 /* Root */
 :root {
@@ -11,6 +12,8 @@
     /* Fonts & font sizes */
     --primary-font: 'Roboto', 'sans-serif';
     --body-font: 'Teko', 'sans-serif';
+    --acc-font: 'DM Serif Display', serif;
+    --xsmall-font: .8rem;
     --small-font: 1rem;
     --med-font: 1.5rem;
     --large-font: 3rem;
@@ -19,6 +22,7 @@
 
 body {
     background: var(--primary-color);
+    margin: 0;
 }
 
 h1 {
@@ -121,10 +125,7 @@ body {
 }
 
 .media {
-
-    object-fit: cover;
-    display: block;
-    height: 100%;
+    /* display: block; */
     width: 100%;
 }
 
@@ -155,14 +156,14 @@ body {
 }
 
 .logo {
-    margin-right: 1rem;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 700;
 }
 
 .navbar-menu .logo {
-    margin-left: -90px;
+    font-size: 3rem;
 }
+
 /* End logos */
 
 /* Homepage buttons */
@@ -176,7 +177,7 @@ body {
     border-radius: 5%;
     border: none;
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: .8rem 1.2rem;
     margin: 5px;
 }
 
@@ -204,16 +205,19 @@ body {
 
 /* Navbar Styles */
 .toggle-nav {
+    padding: 3px;
+    border-radius: 50%;
+    margin: 10px;
+    font-size: 2.2rem;
     color: #fff;
-    font-size: 3rem;
     cursor: pointer;
-    width: 30px;
+    width: fit-content;
 }
 
 .navbar-menu {
     display: block;
     position: absolute;
-    width: 400px;
+    width: 300px;
     height: 100%;
     padding: 1.5rem;
     background-color: rgb(36, 43, 58);
@@ -255,19 +259,8 @@ body {
 }
 
 
-.login-btn {
-    background-color: #fff;
-    padding: 10px;
-    width: 200px;
-    border-radius: 2%;
-    border: none;
-    cursor: pointer;
-    margin-top: 2rem;
-}
-
 .login-btn:hover {
-    background-color: var(--secondary-color);
-    color: #fff;
+   opacity: 0.8;
 }
 
 .nav-link {
@@ -299,6 +292,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    font-family: var(--acc-font);
     background: rgb(0,0,0,0.5);
     z-index: 1;
     width: 100%;
@@ -315,20 +309,23 @@ body {
 }
 
 .login-box h3 {
-    color: #e30b5c;
+    margin-bottom: 5px;
+    border-bottom: 1px solid var(--secondary-color);
+    width: fit-content;
+    color: #fff;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .box-body {
-    padding: 4rem;
+    padding: 2rem;
     font-weight: bold;
 }
 
 .box-body a {
     text-decoration: none;
     color: #fff;
-    font-size: var(--small-font);
+    font-size: var(--xsmall-font);
     cursor: pointer;
 }
 
@@ -337,15 +334,19 @@ body {
 }
 
 .box-body .btn-secondary {
+    color: #fff;
+    background-color: #e30b5c;
+    font-weight: 500;
+    border-radius: 3px;
     width: 100%;
-    height: 2rem;
+    padding: .8rem;
     margin-top: 2rem;
     border: none;
 
 }
 
 .box-body .btn-secondary:hover {
-    background-color: var(--secondary-color);
+    opacity: 0.8;
     color: #fff;
     cursor: pointer;
     transform: .5s;
@@ -366,14 +367,15 @@ body {
 
 .modal .modal-footer {
     background: #3f475a;
-    color: #e30b5c;
     padding: 1rem 0;
+    color: rgb(250, 240, 240);
     border-top: rgba(238, 238, 238, 0.651) 1px solid;
     text-align: center;
 }
 
 .modal .modal-footer a {
-    color: white;
+    font-size: var(--small-font);
+    color: #fff;
     text-decoration: none;
 }
 
@@ -381,10 +383,6 @@ body {
     margin: 1rem 0;
 }
 
-.form-control label {
-    display: block;
-    text-transform: uppercase;
-}
 
 .form-control input {
     width: 100%;
@@ -398,24 +396,12 @@ body {
 @media(max-width: 768px) {
     .navbar-menu {
         max-width: 300px;
-        height: 80%;
+        height: 100%;
         transition: 0.5s;
     }
 
     .navbar-menu .logo {
-        font-size: 32px;
-    }
-
-    .bx {
-        font-size: 28px;
-    }
-
-    .navbar-menu .bx-x {
-        font-size: 28px;
-    }
-
-    .navbar-menu .logo {
-        margin-left: -60px;
+        font-size: 2.2rem;
     }
 
     .login-btn {
